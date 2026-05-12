@@ -2,5 +2,3 @@ config/.env
 .idea/
 /dartliga.db
 /queue_state.json
-/leaderboard.html
-/players.json

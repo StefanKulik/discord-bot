@@ -50,8 +50,8 @@ MATCH_ID_PATTERN = re.compile(r"#(\d+)")
 SCORE_PATTERN = re.compile(r"^\s*(\d{1,2})\s*[:\-]\s*(\d{1,2})\s*$")
 AVERAGE_PATTERN = re.compile(r"^\s*\d+(?:[.,]\d+)?\s*$")
 REPO_ROOT = Path(__file__).resolve().parents[1]
-LEADERBOARD_FILE = "../leaderboard.html"
-PLAYER_DATA_FILE = "../players.json"
+LEADERBOARD_FILE = "leaderboard.html"
+PLAYER_DATA_FILE = "players.json"
 QUEUE_STATE_FILE = REPO_ROOT / "queue_state.json"
 RANKED_RESULT_STATUS_SQL = "status IN ('completed', 'confirmed') AND winner_id IS NOT NULL AND loser_id IS NOT NULL"
 WITHDRAW_ENABLE_DELAY = timedelta(minutes=5)

@@ -20,7 +20,7 @@ RANKED_RESULT_STATUS_SQL = "status IN ('completed', 'confirmed') AND winner_id I
 async def create_db_pool(bot: commands.Bot) -> None:
     print("Connect to SQLite database...")
     try:
-        bot.db = SqliteDatabase("../dartliga.db")
+        bot.db = SqliteDatabase("dartliga.db")
         await bot.db.connect()
     except Exception as exc:
         bot.db = None
